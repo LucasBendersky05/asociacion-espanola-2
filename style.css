@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*font-family: 'Lato', sans-serif;*/
+
+:root {
+    --colorTitulos:#8c2574;
+    --colortextos: #777777;
+    --colorbotones: #8c2574;
+    --colorfondo: #A381F2;
+    --paddingsecciones: 20px 0;
+    --marginelementos: 60px;
+
+}
+
+body {
+    font-family: 'Lato';
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: var(--paddingsecciones);
+    margin-bottom: 40px;        
+}
+
+/*-----menu-----*/
+
+.menu-navegacion {
+    position: fixed;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    background-color: white;
+    margin-bottom: 20px;
+    width: 100%;
+    
+}
+
+.logo {
+    height: 90px;    
+}
+
+.logo img {
+    display: block;
+    height: 100%;
+}
+
+.enlaces li {
+    list-style: none;
+    display: inline-block;
+}
+
+.enlaces a {
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+}
+
+/*-----hero-----*/
+
+.hero {
+    height: 400px;
+    background-image: url(./img/shutterstock_2141423903.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.contenedor-textos {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+}
+
+.hero h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.hero p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.boton {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    background: var(--colorbotones);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+/*-----Main-----*/
+
+.titulo-seccion {
+    text-align: center;
+    font-size: 35px;
+    color: var(--colorTitulos);
+    padding-top: 20px;   
+}
+
+.copy {
+    text-align: center;
+    color: #777777;
+    margin: 20px 0;
+}
+
+.areas {
+    padding-top: var(--marginelementos);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.area {
+    font-size: 20px;
+    width: 180px;
+    height: 180px;
+    background-image: url(img/shutterstock_2141423903.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/*-----novedades-----*/
+
+.img-novedad {
+    width: 300px;
+    height: 200px;
+}
+
+.novedades {
+    padding-top: var(--marginelementos);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;  
+}
+
+.titulo-novedad {
+    max-width: 300px;
+}
+
+.texto-novedad {
+    max-width: 300px;
+}
+
+.proyects {
+    background: #f2f2f2;    
+}
+
+.novedad {
+    margin-bottom: var(--marginelementos);
+}
+
+.novedad:hover {
+    transform: scale(0.9);
+} 
+
+.capacitaciones {
+    background: white;
+}
+
+/*-----casa malharro-----*/
+
+
+/*-----footer-----*/
+
+
+
+footer .titulo-seccion {
+    color: var(--colorTitulos);
+}
+
+footer .copy {
+    color: #777777;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.redes-sociales i {
+    font-size: 30px;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+@media screen and (max-width:800px) {
+    .menu-navegacion {
+        flex-direction: column;
+        height: 180px;
+        justify-content: center;
+        text-align: center;          
+        
+    }
+
+    .hero {
+        height: 600px;
+        
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+
+
+    .hero h1 {
+        font-size: 25px;
+        font-weight: 400;
+        max-width: 90%;
+    }
+
+    .hero p {
+        font-size: 18px;
+        font-weight: 400;
+        max-width: 80%;
+    }
+
+    .contenedor-textos {
+        padding-top: 80px;
+        height: 90;
+        
+        
+    }
+
+    .contenedor-textos h1{
+        margin-top: 70px;
+    }
+
+   
+
+    .boton {
+        margin-bottom: 50px;
+    }
+
+    .areas {
+        padding-left: 20px;
+        margin-bottom: 20px;
+       
+    }
+    .copy {
+        max-width: 80%;
+        margin: 0 auto;
+        
+    }    
+
+    
+
+}
